@@ -23,3 +23,20 @@
   body {
     background-color: pink;
   }
+
+.top {
+    top: 10px;
+}
+.bottom {
+    bottom: 10px;
+}
+
+.remove-button {
+    display: block;
+    martin-top: 10px;
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}
