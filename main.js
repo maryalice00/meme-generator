@@ -33,6 +33,13 @@ bottomTextInput.addEventListener("change", () => {
   updateMemeCanvas(canvas, image, topTextInput.value, bottomTextInput.value);
 });
 
+ const removeButton = document.createElement('button');
+    removeButton.classList.add('remove-button');
+    removeButton.innerText = "Remove Meme";
+    removeButton.addEventListener('click', function() {
+        memeContainer.remove();
+    });
+
 function updateMemeCanvas(canvas, image, topText, bottomText) {
   const ctx = canvas.getContext("2d");
   const width = image.width;
